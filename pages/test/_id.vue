@@ -11,6 +11,8 @@ export default {
     return !isNaN(params.id);
   },
   fetch({ $axios, store, params }) {
+    if (store.state.selectedPost && store.state.selectedPost.id == params.id)
+      return true;
     return $axios
       .$get(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
       .then((res) => {
