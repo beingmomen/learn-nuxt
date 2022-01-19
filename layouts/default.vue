@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <Nav /> -->
-    <p>momen</p>
+    <!-- <p>momen</p> -->
     <Nuxt />
     <!-- <Pagination /> -->
   </div>
